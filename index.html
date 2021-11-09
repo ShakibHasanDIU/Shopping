@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div><h1>Your Bag</h1></div>
+        <table class="_table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Rate</th>
+              <th>Amount</th>
+              <th width="50px">
+                <div class="action_container">
+                  <button class="success" onclick="create_tr('table_body')">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="table_body">
+            <tr>
+              <td>
+                <input type="text" class="form_control" placeholder="">
+              </td>
+              <td>
+                <input type="text" class="form_control" placeholder="">
+              </td>
+              <td>
+                <input type="text" class="form_control" placeholder="">
+              </td>
+              <td>
+                <input type="text" class="form_control" placeholder="">
+              </td>
+              <td>
+                <div class="action_container">
+                  <button class="danger" onclick="remove_tr(this)">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+<div><h3>Notes</h3></div>
+        <textarea placeholder="Any information" name="" id="" cols="30" rows="5"></textarea>
+        <textarea placeholder="Terms And condition" name="" id="" cols="30" rows="5"></textarea>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
